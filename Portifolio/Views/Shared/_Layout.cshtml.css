@@ -1,0 +1,83 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+
+
+.container-fluid {
+    position:relative;
+    background-color: #000508;
+    height: 80px;
+    border-radius: 30px;
+    color: #fff;
+    display:flex;
+    justify-content:center;
+    align-items: center;    
+    overflow: hidden;
+}
+.container-fluid a{
+    z-index:1;
+}
+
+
+a {
+    color: #0077cc;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5ee5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
+.container-fluid::before {
+    content: "";
+    position: absolute;
+    width: 1000%;
+    height: 3000%;
+    background: linear-gradient(180deg, #ff0000, #008122);
+    animation: animate 2s linear infinite;
+}
+.container-fluid::after {
+    content: "";
+    position: absolute;
+    background-color: #000508;
+    inset: 3px;
+    border-radius: inherit;
+}
+
+
+.nav-main{
+    display:flex;
+    width:100%;
+    font-size:25px;
+}
