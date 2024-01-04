@@ -19,35 +19,14 @@ body {
 }
 
 
-.conteinerProjetos {
-    display: flex;
-    justify-content:center;
-    padding: 10px;
-    background-color:slategrey;
-    border-radius:25px;
-    flex-wrap:wrap;
-    
-}
-
-.projetos {
-    height: 300px;
-    width: 450px;
-    padding:10px;
-    
-    
-}
-
-img {
-    width: 100%;
-    
-}
+/*home portifolio*/
 
 .headerHome {
     display:flex;
     justify-content:center;
     align-items:center;
     margin-top:96px;
-    width:100%;
+    width:100vw;
     height:100%;
 }
 .boxIntroduction {
@@ -60,6 +39,7 @@ img {
     justify-content:center;
     align-items:center;
     overflow:hidden;
+    
    
 }
 
@@ -68,16 +48,22 @@ img {
     position:absolute;
     width:400px;
     height:200%;
-    background:linear-gradient(180deg, #004bff, #008122);
+    background:linear-gradient(180deg, #004bff, #1b0056);
             
-    animation: animate 8s linear infinite;  
+    animation: animate 20s linear infinite;  
 }
 
+
 @keyframes animate {
-    100%{
+    50% {
         transform: rotate(360deg);
     }
+
+    100% {
+        transform: rotate(-360deg);
+    }
 }
+
 .boxIntroduction::after {
     content: "";
     position: absolute;
@@ -88,4 +74,294 @@ img {
 }
 .name{ 
     z-index:1;
+    background:linear-gradient(to left, #FFF, #22c802, #42b4ff);
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    display:inline-block;
+
+}
+.sobre {
+    z-index: 1;
+    color:#ffffff
+}
+.introduction {
+    padding:50px;
+    z-index:1;
+    display:flex;
+
+
+}
+@media (max-width:700px){
+    .boxIntroduction{
+        width:500px;
+        height:300px;
+        
+    }
+    .boxIntroduction::before {
+        width: 180px;
+        height: 200%;
+    }
+    .sobre{
+        font-size:20px;
+    }
+}
+
+@media (max-width:575px) {
+    .boxIntroduction {
+        height: 300px;
+        width: 400px;
+    }
+
+        .boxIntroduction::before {
+            height: 100px;
+            width: 200%;
+        }
+    
+
+        
+}
+@media (max-width:400px) {
+    .boxIntroduction {
+        width: 250px;
+        height: 300px;
+    }
+
+        .boxIntroduction::before {
+            width: 180px;
+            height: 200%;
+        }
+
+    .sobre {
+        font-size: 15px;
+    }
+}
+@media (max-width:275px){
+    .sobre{
+        font-size:15px; 
+    }
+}
+.logoHabilidades{
+    background:#00000000;
+    width:100vw;
+    height:120px;
+    display:flex;
+    margin-left:0px;
+    margin-top:200px;
+    gap:50px;
+    display:flex;
+    justify-content:space-around;
+   
+}
+    .logoHabilidades img {
+        width: 120px;
+        height: 120px;
+    }
+
+    @media (max-width:500px){
+        .logoHabilidades img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+@media (max-width:371px) {
+    .logoHabilidades img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+
+/* parte projetos*/
+
+
+.primary-projetos {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.containertitle {
+    z-index: 1;
+    background: linear-gradient(to left, #FFF, #004bff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-family: AIGDT;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.conteinerProjetos {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #ffffff0e;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.title-projs{
+    font-size:30px;
+    color:#bbbbbb;
+    text-transform:uppercase;
+}
+.projeto {
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.projetos img {
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+    animation: engrenagem 6s linear infinite;
+    height: 200px;
+    width: 200px;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 500px;
+    gap:50;
+    
+}
+
+@keyframes engrenagem {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media(max-width:230px){
+    .projetos img {
+        width:150px;
+        height:150px;
+    }
+}
+
+@media(max-width:490px){
+    .title-projs {
+        font-size:15px;
+        
+    }
+}
+
+/*formação e habilidades*/
+
+.boxformacao {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.formacao {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 400px;
+    height: 400px;
+    background-color: #ffffff0e;
+    color: #FFF;
+    border-radius: 30px;
+    font-size: 25px;
+    word-spacing: 10px;
+    padding:30px;
+    position:relative;
+    overflow:hidden;
+    
+}
+.formacao::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200%;
+    background: linear-gradient(180deg, #004bff, #1b0056);
+    animation: animate2 20s linear infinite;
+}
+    .formacao::after {
+        content: "";
+        position: absolute;
+        background-color: #000508;
+        inset: 10px;
+        border-radius: inherit;
+    }
+.descricaoformacao, .descricaoHabilidades{
+    z-index: 1;
+}
+@keyframes animate2 {
+    100% {
+        transform:rotate(320deg);
+    }
+}
+.descricaoHabilidades img{
+    width:100px;
+    height:100px;
+}
+
+@media(max-width:860px) {
+    .boxformacao {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:500px){
+    .formacao {
+        width:300px;
+        height:300px;
+        font-size:20px;
+    }
+    .descricaoHabilidades img {
+        width: 60px;
+        height: 60px;
+    }
+    .formacao::before {
+        height: 200%;
+        width: 170px;
+    }
+}
+
+@media(max-width:310px) {
+    .formacao {
+        width: 250px;
+        height: 250px;
+        font-size: 20px;
+    }
+
+    .descricaoHabilidades img {
+        width: 40px;
+        height: 40px;
+    }
+    .formacao::before{
+        height:200%;
+        width:80px;
+    }
+}
+@media(max-width:260px) {
+    .formacao {
+        width: 200px;
+        height: 200px;
+        font-size: 15px;
+    }
+
+    .descricaoHabilidades img {
+        width: 40px;
+        height: 40px;
+    }
 }

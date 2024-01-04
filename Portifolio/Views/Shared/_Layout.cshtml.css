@@ -7,7 +7,7 @@ for details on configuring this project to bundle and minify static web assets. 
     position:relative;
     background-color: #000508;
     height: 80px;
-    border-radius: 30px;
+    border-radius: 20px;
     color: #fff;
     display:flex;
     justify-content:center;
@@ -64,8 +64,8 @@ button.accept-policy {
     position: absolute;
     width: 1000%;
     height: 3000%;
-    background: linear-gradient(180deg, #ff0000, #008122);
-    animation: animate 2s linear infinite;
+    background: linear-gradient(180deg, #00ffa1, #1b6ec2);
+    animation: animate 6s linear infinite;
 }
 .container-fluid::after {
     content: "";
@@ -80,4 +80,48 @@ button.accept-policy {
     display:flex;
     width:100%;
     font-size:25px;
+    justify-content:center;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+}
+
+@media (max-width: 575px){
+    .navbar, .navbar-nav{
+        display: flex;
+        flex-direction:row;
+        color: #fff;
+        z-index: 1;
+        gap:10px;
+        font-size:20px;
+        padding:10px;
+        
+    }
+
+    
+
+}
+@media (max-width: 290px) {
+    .navbar, .navbar-nav {
+        font-size:15px;
+    }
+}
+
+@media (max-width: 222px) {
+    .navbar, .navbar-nav {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1200px){
+    .navbar-nav{
+        gap:50px;
+        color:red;
+    }
+}
+.container {
+    margin:0;
+    padding:0;
 }
